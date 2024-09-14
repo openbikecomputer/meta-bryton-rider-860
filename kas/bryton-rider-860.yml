@@ -1,0 +1,20 @@
+header:
+  version: 14
+
+machine: bryton-rider-860
+distro: poky
+target: core-image-base
+
+repos:
+  poky:
+    url: "https://git.yoctoproject.org/git/poky"
+    commit: "7004840f3dc12e76822cee7b48902c08a553a118"
+    path: "layers/poky"
+    layers:
+      meta:
+      meta-poky:
+      meta-yocto-bsp:
+
+  meta-brytonrider860:
+    layers:
+      .:
